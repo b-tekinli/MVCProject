@@ -13,17 +13,22 @@ namespace MVCProject.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult About()         // hakkında sayfasını döndürür.
         {
             ViewBag.Message = "Your application description page.";
 
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Contact()       // iletişim sayfasını döndürür.
         {
             ViewBag.Message = "Your contact page.";
 
+            return View();
+        }
+
+        public ActionResult Test()
+        {
             return View();
         }
     }
