@@ -8,5 +8,8 @@ Bunlar;
 3. DataAccess Layer ==> CRUD fonksiyonları ve Filter işlemlerini yaptığımız katmandır.
 4. Entities Layer ==> Proje tablolalarının içerisindeki varlıkları tanımladığımız katmandır.
 
+![layers](https://github.com/b-tekinli/MVCProject/blob/main/images/layers.png)
+
 # Database
 
+![tables](https://github.com/b-tekinli/MVCProject/blob/main/images/tables.png)
