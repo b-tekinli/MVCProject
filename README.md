@@ -3,10 +3,15 @@
 Başlangıçta 4 katman oluşturuyoruz.
 
 Bunlar;
-1. Business Layer ==> İş kurallarını belirlediğimiz katmandır.
-2. WebAPI (MVC Project UI) ==> Yaptığımız işlemlerin sonucunu görebileceğimiz katmandır.
-3. DataAccess Layer ==> CRUD fonksiyonları ve Filter işlemlerini yaptığımız katmandır.
-4. Entities Layer ==> Proje tablolalarının içerisindeki varlıkları tanımladığımız katmandır.
+1. BusinessLayer ==> İş kurallarını belirlediğimiz katmandır.
+2. WebAPI (MVCProjectUI) ==> Yaptığımız işlemlerin sonucunu görebileceğimiz katmandır.
+3. DataAccessLayer ==> CRUD fonksiyonları ve Filter işlemlerini yaptığımız katmandır.
+4. EntityLayer ==> Proje tablolalarının içerisindeki varlıkları tanımladığımız katmandır.
+
+![layers](https://github.com/b-tekinli/MVCProject/blob/main/images/layers.png)
 
 # Database
 
+SQL Tabloları
+
+![tables](https://github.com/b-tekinli/MVCProject/blob/main/images/tables.png)
