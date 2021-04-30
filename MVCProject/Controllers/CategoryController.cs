@@ -24,6 +24,14 @@ namespace MVCProject.Controllers
             return View(categoryValues);
         }
 
+        [HttpGet]
+        public ActionResult AddCategory()
+        {
+            return View();
+        }
+        
+
+        [HttpPost]
         public ActionResult AddCategory(Category p)
         {
             categoryManager.CategoryAddBL(p);
