@@ -20,7 +20,7 @@ namespace MVCProject.Controllers
 
         public ActionResult GetCategoryList()
         {
-            var categoryValues = categoryManager.GetAllBL();
+            // var categoryValues = categoryManager.GetAllBL();
             return View(categoryValues);
         }
 
@@ -34,7 +34,7 @@ namespace MVCProject.Controllers
         [HttpPost]
         public ActionResult AddCategory(Category p)
         {
-            categoryManager.CategoryAddBL(p);
+            // categoryManager.CategoryAddBL(p);
             return RedirectToAction("GetCategoryList");
         }
     }
