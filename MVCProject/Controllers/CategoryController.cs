@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Concrete;
+using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -12,7 +13,7 @@ namespace MVCProject.Controllers
     {
         // GET: Category
 
-        CategoryManager categoryManager = new CategoryManager();
+        CategoryManager categoryManager = new CategoryManager(new EfCategoryDal());
        
         public ActionResult Index()
         {
@@ -21,7 +22,7 @@ namespace MVCProject.Controllers
 
         public ActionResult GetCategoryList()
         {
-            // var categoryValues = categoryManager.GetAllBL();
+            var categoryValues = categoryManager.GetList();
             return View(categoryValues);
         }
 
