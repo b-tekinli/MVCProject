@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Abstract
 {
-    public class ICategoryService
+    public interface ICategoryService
     {
         List<Category> GetList();
     }
