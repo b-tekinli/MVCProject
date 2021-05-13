@@ -54,5 +54,19 @@ namespace MVCProject.Controllers
             categoryManager.CategoryDelete(categoryValue);
             return RedirectToAction("Index");
         }
+
+        [HttpGet]
+        public ActionResult EditCategory(int id)
+        {
+            var CategoryValue = categoryManager.GetByID(id);
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult EditCategory(Category p)
+        {
+            categoryManager.CategoryUpdate(p);
+            return RedirectToAction("Index");
+        }
     }
 }
