@@ -12,12 +12,13 @@ namespace DataAccessLayer.Concrete.Repositories
 {
     public class WriterRepository : IWriterDal
     {
-        Context c = new Context();
+        Context context = new Context();
         DbSet<Writer> _object;
 
         public void Delete(Writer p)
         {
-            throw new NotImplementedException();
+            _object.Remove(p);
+            context.SaveChanges();
         }
 
         public Writer Get(Expression<Func<Writer, bool>> filter)
@@ -27,12 +28,13 @@ namespace DataAccessLayer.Concrete.Repositories
 
         public void Insert(Writer p)
         {
-            throw new NotImplementedException();
+            _object.Add(p);
+            context.SaveChanges();
         }
 
         public List<Writer> List()
         {
-            throw new NotImplementedException();
+            return _object.ToList();
         }
 
         public List<Writer> List(Expression<Func<Writer, bool>> filter)
@@ -42,7 +44,7 @@ namespace DataAccessLayer.Concrete.Repositories
 
         public void Update(Writer p)
         {
-            throw new NotImplementedException();
+            context.SaveChanges();
         }
     }
 }
