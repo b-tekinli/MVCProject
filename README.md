@@ -15,3 +15,7 @@ Bunlar;
 SQL Tabloları
 
 ![tables](https://github.com/b-tekinli/MVCProject/blob/main/images/tables.png)
+
+# Images
+
+![statistic](https://github.com/b-tekinli/MVCProject/blob/main/images/statisticController.png)
