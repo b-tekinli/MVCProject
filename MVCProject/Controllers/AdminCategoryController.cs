@@ -14,6 +14,7 @@ namespace MVCProject.Controllers
     public class AdminCategoryController : Controller
     {
         CategoryManager categoryManager = new CategoryManager(new EfCategoryDal());
+
         public ActionResult Index()
         {
             var categoryValues = categoryManager.GetList();
@@ -44,7 +45,6 @@ namespace MVCProject.Controllers
                     ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
                 }
             }
-
             return View();
         }
 
@@ -58,12 +58,12 @@ namespace MVCProject.Controllers
         [HttpGet]
         public ActionResult EditCategory(int id)
         {
-            var CategoryValue = categoryManager.GetByID(id);
-            return View();
+            var categoryValue = categoryManager.GetByID(id);
+            return View(categoryValue);
         }
 
         [HttpPost]
-        public ActionResult EditCategory(Category p)
+        public ActionResult UpdateCategory(Category p)
         {
             categoryManager.CategoryUpdate(p);
             return RedirectToAction("Index");
