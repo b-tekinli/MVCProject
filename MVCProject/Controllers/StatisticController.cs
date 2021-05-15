@@ -25,7 +25,7 @@ namespace MVCProject.Controllers
             string manyTitles = _context.Headings.Max(x => x.Category.CategoryName);                // category name with most titles was displayed.
             ViewBag.manyTitles = manyTitles;
 
-            int categoryStatusFalse = _context.Categories.Count(x => x.CategoryStatus == false);    // 
+            int categoryStatusFalse = _context.Categories.Count(x => x.CategoryStatus == false);    // wrong ones were calculated.
             ViewBag.notActiveCategory = categoryStatusFalse;
 
             return View();
