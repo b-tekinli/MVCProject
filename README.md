@@ -1,6 +1,6 @@
 ## MVCProject
 
-Başlangıçta 4 katman oluşturuyoruz.
+İlk olarak 4 katman oluşturuyoruz.
 
 Bunlar;
 1. BusinessLayer ==> İş kurallarını belirlediğimiz katmandır.
