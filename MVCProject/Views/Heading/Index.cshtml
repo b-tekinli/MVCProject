@@ -15,6 +15,7 @@
         <th>Başlık</th>
         <th>Kategori</th>
     </tr>
+
     @foreach (var item in Model)
     {
         <tr>
@@ -23,4 +24,7 @@
             <td>@item.Category.CategoryName</td>
         </tr>
     }
+
 </table>
+<br />
+<a hreef="/Heading/AddHeading" class="btn btn-info">Yeni Başlık Girişi</a>
